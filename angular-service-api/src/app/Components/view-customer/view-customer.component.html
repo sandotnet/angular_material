@@ -1,0 +1,35 @@
+<div class="container">
+    <table class="table table-bordered">
+        <tr>
+            <td>CustomerId</td>
+            <td>
+                <input type="number" [(ngModel)]="customer.customerId" class="form-control">
+            </td>
+        </tr>
+        <tr>
+            <td>CustomerName</td>
+            <td>
+                <input type="text" [(ngModel)]="customer.customerName" class="form-control">
+            </td>
+        </tr>
+        <tr>
+            <td>Mobile</td>
+            <td>
+                <input type="text" [(ngModel)]="customer.mobile" class="form-control">
+            </td>
+        </tr>
+        <tr>
+            <td>Dob</td>
+            <td>
+                <input type="text" [(ngModel)]="customer.dob" class="form-control">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button on-click="GetCustomer()" class="btn btn-primary">Search</button>
+                <button on-click="EditCustomer()" class="btn btn-primary">Edit</button>
+                <button on-click="DeleteCustomer()" class="btn btn-primary">Delete</button>
+            </td>
+        </tr>
+    </table>
+</div>

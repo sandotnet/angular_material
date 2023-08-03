@@ -1,0 +1,26 @@
+<div class="container">
+    <table class="table table-light">
+        <tr>
+            <td>Username</td>
+            <td>
+                <input type="text" [(ngModel)]="user.username" class="form-control">
+            </td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td>
+                <input type="password" [(ngModel)]="user.password" class="form-control">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button class="btn btn-primary" on-click="Validate()">Login</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <span class="text-warn">{{errMsg}}</span>
+            </td>
+        </tr>
+    </table>
+</div>

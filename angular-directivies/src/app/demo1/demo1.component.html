@@ -1,0 +1,10 @@
+<h1 *ngIf="isVisible">I am goin to be hide by just click the button</h1>
+<button on-click='setVisible()'>{{isVisible?'Hide':'Show'}}</button>
+<div *ngIf="isVisible">
+    <p>Para1</p>
+    <p>Para1</p>
+    <p>Para1</p>
+    <h1>Head1</h1>
+    <h1>Head1</h1>
+    <h1>Head1</h1>
+</div>

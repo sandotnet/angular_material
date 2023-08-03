@@ -1,0 +1,17 @@
+<header>
+  <h1 style="color: red;">My Shop</h1>
+</header>
+<nav>
+  <ul>
+    <li><a [routerLink]="'info'">Home</a></li>
+    <li><a [routerLink]="'about'">About</a></li>
+    <li><a [routerLink]="'products'">Products</a></li>
+    <li><a [routerLink]="'contact'">ContactUs</a></li>
+  </ul>
+</nav>
+<section>
+  <router-outlet></router-outlet>
+</section>
+<footer>
+  <h3>All Rights Reserved &copy; @2023-24</h3>
+</footer>

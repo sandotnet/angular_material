@@ -1,0 +1,32 @@
+<div class="container">
+
+    <table class="table table-bordered table-hover">
+        <tr>
+            <td>No1</td>
+            <td>
+                <input type="number" [(ngModel)]="n1">
+            </td>
+        </tr>
+        <tr>
+            <td>No2</td>
+            <td>
+                <input type="number" [(ngModel)]="n2">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button on-click="Add()" class="btn btn-primary">
+                    Add</button>
+                <button on-click="Mul()" class="btn btn-primary">
+                    Mul</button>
+                <button on-click="Div()" class="btn btn-primary">
+                    Div</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <span class="text-primary">{{result}}</span>
+            </td>
+        </tr>
+    </table>
+</div>

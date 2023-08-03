@@ -1,0 +1,27 @@
+<div class="container">
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of students">
+                <td>{{item.studentId}}</td>
+                <td>{{item.studentName}}</td>
+                <td>{{item.age}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <div *ngFor="let item of students">
+        <pre>
+        ID:{{item.studentId}}
+        Name:{{item.studentName}}
+        Age:{{item.age}}
+    </pre>
+        <hr>
+    </div>
+</div>

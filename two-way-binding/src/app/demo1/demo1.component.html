@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            Enter Name
+        </div>
+        <div class="col-sm-4">
+            <input type="text" class="form-control" [(ngModel)]="name">
+        </div>
+        <div class="col-sm-4">
+            <button on-click="clickMe()" class="btn btn-info">ClickMe</button>
+        </div>
+    </div>
+    <div class="row">
+        <span class="text-info">Hello,{{name}}</span>
+    </div>
+
+</div>
